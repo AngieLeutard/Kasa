@@ -1,0 +1,32 @@
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 86%;
+    height: 68px;
+    margin: 40px 100px 80px 100px;
+}
+
+.header_logo {
+    width: 17%;
+    height: 100%;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+
+.header_link {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.header_link:focus {
+    text-decoration: underline
+}

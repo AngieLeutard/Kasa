@@ -1,6 +1,6 @@
 import logo2 from '../../src/assets/logo2.png'
-import '../style/Footer.css'
-import '../style/Font.css'
+import '../style/components/Footer.css'
+import '../style/assets/Font.css'
 
 function Header() {
     return (

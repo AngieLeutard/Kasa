@@ -1,0 +1,11 @@
+.home_cardList_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}

@@ -1,0 +1,8 @@
+.about_textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    gap: 30px;
+    width: 83%;
+}

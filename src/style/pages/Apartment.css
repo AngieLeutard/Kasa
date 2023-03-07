@@ -35,6 +35,13 @@
     margin-bottom: 20px;
 }
 
+/* Profile */
+
+.profile_wrapper {
+    position: relative;
+    width: 100%;
+}
+
 /* Tag */
 
 .apartment_tag_wrapper {
@@ -57,4 +64,16 @@
 
 .apartment_textBox {
     width: 47%;
+}
+
+p:empty {
+    display: none;
+}
+
+ul:empty {
+    display: none;
+}
+
+li:empty {
+    display: none;
 }

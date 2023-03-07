@@ -1,5 +1,6 @@
 import '../style/components/Banner.css';
-import '../style/assets/Font.css'
+import '../style/assets/Font.css';
+import PropTypes from 'prop-types';
 
 function Banner({ title, picture }) {
     return (
@@ -8,6 +9,11 @@ function Banner({ title, picture }) {
             <span className='banner_title'>{ title }</span>
         </div>
     )
+}
+
+Banner.propTypes = {
+    title: PropTypes.string,
+    picture: PropTypes.string,
 }
 
 export default Banner

@@ -4,28 +4,39 @@ import '../style/assets/Font.css';
 import Slider from '../components/Slider';
 import TextBox from '../../src/components/TextBox';
 import Tag from '../../src/components/Tag';
+import Profile from '../components/Profile';
 import Annonces from '../../src/annonces.json';
 import { useParams } from 'react-router-dom';
 
-function Apartment(title, text) {
+function Apartment() {
   const { id } = useParams();
   const annonce = Annonces.find(a => a.id === id)
 
-  console.log(annonce) 
   return (
     <div className='body'>
       <section className='apartment_slider'>
-        <Slider />
+        <Slider 
+          image={ annonce.pictures }
+        />
       </section>
       <section className='apartment_description_wrapper'>
+      <div className='profile_wrapper'>
+          <Profile 
+            text={ annonce.host.name }
+            picture={ annonce.host.picture }
+          />
+        </div>
         <div className='apartment_title_wrapper'>
-          <h1 className='apartment_title'>Titre du logement</h1>
-          <span className='apartment_location'>Localisation du logement</span>
+          <h1 className='apartment_title'>{ annonce.title }</h1>
+          <span className='apartment_location'>{ annonce.location }</span>
         </div>
         <div className='apartment_tag_wrapper'>
-          <Tag />
-          <Tag />
-          <Tag />
+          {annonce.tags.map((tags) => (
+            <Tag 
+              key={`${tags}`}
+              title={ tags }          
+            />
+          ))}
         </div>
         <div className='apartment_textBox_wrapper'>
           <section className='apartment_textBox'>
@@ -35,9 +46,9 @@ function Apartment(title, text) {
             />
           </section>
           <section className='apartment_textBox'>
-            <TextBox
+              <TextBox
               title='Équipements'
-              text='liste des équipements'
+              liste={ annonce.equipments }
             />
           </section>
         </div>
@@ -47,12 +58,3 @@ function Apartment(title, text) {
 }
 
 export default Apartment;
-
-
-// {Annonces.map((profile, index) => (
-//   <TextBox
-//     key={`${profile.id}-${index}`}
-//     title='Description'
-//     text={profile.description}
-//   />
-//     ))}

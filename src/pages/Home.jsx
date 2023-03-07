@@ -17,7 +17,7 @@ function Home() {
         {Annonces.map((profile, index) => (
             <Card
             key={`${profile.id}-${index}`}
-            picture={profile.pictures[0]}
+            picture={profile.cover}
             title={profile.title}
             id={profile.id}
             />

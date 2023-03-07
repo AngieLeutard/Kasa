@@ -1,8 +1,8 @@
-import '../style/components/TextBox.css'
-import '../style/assets/Font.css'
-import PropTypes from 'prop-types'
+import '../style/components/TextBox.css';
+import '../style/assets/Font.css';
+import PropTypes from 'prop-types';
 
-function TextBox({ title, text }) {
+function TextBox({ title, text, liste }) {
     return (
         <details className='textBox_wrapper'>
             <summary className='textBox_title'>
@@ -15,6 +15,13 @@ function TextBox({ title, text }) {
                 </div>
             </summary>
             <p className='textBox_description'>{ text }</p>
+            <ul className='textBox_description'>
+                {liste && liste.map((li) => (
+                    <li key={`${li}`}>
+                        { li }
+                    </li>
+                ))}
+            </ul>
         </details>
     )
 }
@@ -22,6 +29,7 @@ function TextBox({ title, text }) {
 TextBox.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
+    liste: PropTypes.array
 }
 
 export default TextBox

@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #F7F7F7;
+    border-radius: 0px 0px 10px 10px;
 
 }
 
@@ -33,11 +34,12 @@
     padding-top: 27px;
     padding-bottom: 19px;
     background-color: #F7F7F7;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 24px;
     color: #FF6060;
+    list-style: none;
 }
 
 details > summary {

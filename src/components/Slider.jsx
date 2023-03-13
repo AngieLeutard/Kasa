@@ -1,6 +1,6 @@
 import '../style/components/Slider.css';
-import arrowLeft from '../assets/arrow_left.png';
-import arrowRight from '../assets/arrow_right.png';
+import arrowLeft from '../assets/images/arrow_left.png';
+import arrowRight from '../assets/images/arrow_right.png';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
@@ -38,4 +38,3 @@ Slider.propTypes = {
 }
 
 export default Slider
-

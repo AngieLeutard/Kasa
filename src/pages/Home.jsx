@@ -3,16 +3,18 @@ import '../style/pages/Home.css';
 import Annonces from '../annonces.json';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
-import image from '../assets/IMG.png';
+import image from '../assets/images/IMG.png';
 
 function Home() {
 
   return (
     <div className="body">
-      <Banner
-        title='Chez vous, partout et ailleurs'
-        picture={ image }
-      />
+      <section className='home_bannerContainer'>
+        <Banner
+          title='Chez vous, partout et ailleurs'
+          picture={ image }
+        />
+      </section>
       <section className='home_cardList_wrapper'>
         {Annonces.map((profile, index) => (
             <Card
@@ -27,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home

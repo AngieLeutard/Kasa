@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 const Star = ({hostRate}) => {
     const fullStars = Array(5).fill(<img src={RedStar} alt='' className='stars'/>)
     const emptyStars = Array(5).fill(<img src={GreyStar} alt='' className='stars'/>)
+    
     return (
             <section className='star_wrapper'>
                 {fullStars.slice(5-hostRate).map((fullStar, index) => {

@@ -29,3 +29,27 @@
 .slider_arrowRight {
     right: 24px;
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+	.slider_wrapper {
+		height: 255px;
+		border-radius: 10px;
+	}
+	
+	.slider_picture {
+		border-radius: 10px;
+	}
+	
+	.slider_arrowLeft {
+		width: 3%;
+		left: 6px;
+	}
+	
+	.slider_arrowRight {
+		width: 3%;
+		right: 6px;
+	}
+}

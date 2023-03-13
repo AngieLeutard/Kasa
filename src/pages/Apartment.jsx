@@ -21,15 +21,6 @@ function Apartment() {
         />
       </section>
       <section className='apartment_description_wrapper'>
-      <div className='profile_wrapper'>
-          <Profile 
-            text={ annonce.host.name }
-            picture={ annonce.host.picture }
-          />
-          <Star 
-            hostRate={ annonce.rating }
-          />
-        </div>
         <div className='apartment_title_wrapper'>
           <h1 className='apartment_title'>{ annonce.title }</h1>
           <span className='apartment_location'>{ annonce.location }</span>
@@ -41,6 +32,15 @@ function Apartment() {
               title={ tags }          
             />
           ))}
+        </div>
+        <div className='profile_wrapper'>
+          <Profile 
+            text={ annonce.host.name }
+            picture={ annonce.host.picture }
+          />
+          <Star 
+            hostRate={ annonce.rating }
+          />
         </div>
         <div className='apartment_textBox_wrapper'>
           <section className='apartment_textBox'>
@@ -61,4 +61,4 @@ function Apartment() {
   );
 }
 
-export default Apartment;
+export default Apartment

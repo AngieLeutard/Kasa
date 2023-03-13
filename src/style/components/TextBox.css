@@ -4,7 +4,6 @@
     width: 100%;
     background-color: #F7F7F7;
     border-radius: 0px 0px 10px 10px;
-
 }
 
 .textBox_title {
@@ -23,7 +22,6 @@
     padding-top: 6px;
     padding-bottom: 6px;
     cursor: pointer;
-
 }
 
 .textBox_description {
@@ -67,4 +65,27 @@ details[open] .summary-chevron-up {
 
 details[open] .summary-chevron-down {
     display: block;
+}
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .textBox_title {
+        font-size: 13px;
+    }
+    
+    .textBox_description {
+        font-size: 12px;
+    }
+
+    .summary-chevron-up {
+        right: 7px;
+        bottom: 0.5px;
+    }
+    
+    .summary-chevron-down {
+        right: 7px;
+        bottom: 0.5px;
+    }
 }

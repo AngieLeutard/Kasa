@@ -10,11 +10,6 @@ function Profile({text, picture}) {
                 <p className='profile_name'>{ text }</p>
                 <img src={ picture } alt="" className='profile_picture' />
             </section>
-            {/* <section className='star_wrapper'>
-                <p className='star_container'>
-                    <i className="star"></i>
-                </p>
-            </section> */}
         </div>
     )
 }

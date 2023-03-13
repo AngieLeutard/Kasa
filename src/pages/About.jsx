@@ -1,16 +1,18 @@
 import '../style/layouts/Body.css';
 import '../style/pages/About.css'
 import Banner from '../components/Banner';
-import image from '../assets/IMG2.png';
+import image from '../assets/images/IMG2.png';
 import TextBox from '../../src/components/TextBox';
 
 
 function About() {
   return (
     <div className="body">
-      <Banner 
-        picture={ image }
-      />
+      <section className='about_bannerContainer'>
+        <Banner 
+          picture={ image }
+        />
+      </section>
       <aside className='about_textWrapper'>
         <TextBox 
           title='Fiabilité'
@@ -25,7 +27,7 @@ function About() {
           text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
         />
         <TextBox 
-          title='Responsabilité'
+          title='Securité'
           text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
       </aside>

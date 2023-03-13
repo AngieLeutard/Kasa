@@ -5,8 +5,7 @@
 }
 
 .error404_number {
-    margin: 0;
-    padding-bottom: 66px;
+    margin: 0px 0px 66px 0px;
     font-family: 'Montserrat';
     font-weight: 700;
     color: #FF6060;
@@ -14,8 +13,7 @@
 }
 
 .error404_text {
-    margin: 0;
-    padding-bottom: 182px;
+    margin: 0px 0px 182px 0px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 36px;
@@ -23,8 +21,7 @@
 }
 
 .error404_nav {
-    margin: 0;
-    padding-bottom: 159px;
+    margin: 0px 0px 159px 0px;
 }
 
 .error404_link {
@@ -34,4 +31,28 @@
     font-weight: 500;
     font-size: 18px;
     color: #FF6060;
+}
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .error404_number {
+        margin: 179px 0px 11px 0px;
+        font-size: 96px;
+    }
+    
+    .error404_text {
+        margin: 0px 0px 133px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .error404_nav {
+        margin: 0px 0px 235px 0px;
+    }
+    
+    .error404_link {
+        font-size: 14px;
+    }
 }

@@ -9,3 +9,14 @@
     background-color: #F7F7F7;
     border-radius: 25px;
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .home_cardList_wrapper {
+        padding-top: 0;
+        background-color: white;
+        gap: 20px;
+    }
+}

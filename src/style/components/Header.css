@@ -30,3 +30,13 @@
 .header_link:focus {
     text-decoration: underline
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .header_wrapper {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}

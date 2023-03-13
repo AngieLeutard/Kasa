@@ -40,3 +40,13 @@
     color: white;
     cursor: pointer;
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .card_item {
+        width: 100%;
+        height: 255px;
+    }
+}

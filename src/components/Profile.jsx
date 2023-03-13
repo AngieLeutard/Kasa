@@ -12,11 +12,8 @@ function Profile({text, picture}) {
             </section>
             <section className='star_wrapper'>
                 <p className='star_container'>
-                    <i class="star"></i>
-                    <i class="star"></i>
-                    <i class="star"></i>
-                    <i class="star"></i>
-                    <i class="star"></i>
+                    <i className="star"></i>
+                
                 </p>
             </section>
         </div>

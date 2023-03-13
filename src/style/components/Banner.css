@@ -26,3 +26,18 @@
     font-size: 48px;
     color: white;
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .banner_wrapper {
+        justify-content: left;
+    }
+
+    .banner_title {
+        font-size: 24px;
+        width: 60%;
+        padding-left: 16px;
+    }
+}

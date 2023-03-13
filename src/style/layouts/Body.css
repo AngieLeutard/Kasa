@@ -5,3 +5,14 @@
     margin: 0px 100px 0px 100px;
     max-width: 86%;
 }
+
+/* ** Mobile ** */
+
+@media (max-width:767px) {
+
+    .body {
+        margin: 0;
+        width: 100%;
+        max-width: none;
+    }
+}

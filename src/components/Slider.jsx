@@ -2,27 +2,34 @@ import '../style/components/Slider.css';
 import arrowLeft from '../assets/arrow_left.png';
 import arrowRight from '../assets/arrow_right.png';
 import PropTypes from 'prop-types';
-import Annonces from '../../src/annonces.json';
-import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 
-
 function Slider(image) {
-    const { id } = useParams();
-    const annonce = Annonces.find(a => a.id === id)
+    const [index, setIndex] = useState(0)
 
-    // exemple 
-    // image.setAttribute("src", "./assets/images/slideshow/" + slides[i].image);
+    const handlerChangeSlide = (direction) => {
+        let newIndex = index
+        if (direction === 'right') {
+            newIndex++
+        }
+        if (direction === 'left') {
+            newIndex--
+        }
+        if (newIndex >= image.image.length) {
+            newIndex = 0
+        }
+        else if (newIndex < 0) {
+            newIndex = image.image.length - 1
+        }
+        setIndex(newIndex)
+    }
 
     return (
         <div className='slider_wrapper'>
-            {annonce.pictures.map((image) => (
-                <img src={ image } alt="" className='slider_picture' key={`${image}`}/>
-            ))}
-            <img src={ arrowLeft } alt="" className='slider_arrow slider_arrowLeft' />
-            <img src={ arrowRight } alt="" className='slider_arrow slider_arrowRight' />
+            <img src={ image.image[index] } alt="" className='slider_picture' />
+            <img src={ arrowLeft } alt="" className='slider_arrow slider_arrowLeft' onClick={ () => { handlerChangeSlide('left')}} />
+            <img src={ arrowRight } alt="" className='slider_arrow slider_arrowRight' onClick={ () => { handlerChangeSlide('right')}} />
         </div>
-
     )
 }
 
@@ -31,3 +38,4 @@ Slider.propTypes = {
 }
 
 export default Slider
+

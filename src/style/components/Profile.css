@@ -28,10 +28,22 @@
 }
 
 .star_wrapper {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     right: 0;
     top: 60px;
+    gap: 10px;
 }
+
+.stars {
+    width: 100%;
+    height: 30px;
+}
+
+/* Stars */
+
+/* 
 
 .star_container {
     display: flex;
@@ -50,11 +62,11 @@
     margin-bottom: 1.2em;
     
     border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #FF6060;
+    border-bottom: .7em  solid #E3E3E3;
     border-left:   .3em solid transparent;
   
     /* Controlls the size of the stars. */
-    font-size: 14px;
+    /* font-size: 14px;
 }
     
 .star:before, .star:after {
@@ -69,7 +81,7 @@
     left: -1em;
 
     border-right:  1em solid transparent;
-    border-bottom: .7em  solid #FF6060;
+    border-bottom: .7em  solid #E3E3E3;
     border-left:   1em solid transparent;
 
     transform: rotate(-35deg);
@@ -77,4 +89,4 @@
     
 .star:after {  
     transform: rotate(35deg);
-}
+} */ 

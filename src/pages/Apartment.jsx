@@ -5,6 +5,7 @@ import Slider from '../components/Slider';
 import TextBox from '../../src/components/TextBox';
 import Tag from '../../src/components/Tag';
 import Profile from '../components/Profile';
+import Star from '../components/Star';
 import Annonces from '../../src/annonces.json';
 import { useParams } from 'react-router-dom';
 
@@ -24,6 +25,9 @@ function Apartment() {
           <Profile 
             text={ annonce.host.name }
             picture={ annonce.host.picture }
+          />
+          <Star 
+            hostRate={ annonce.rating }
           />
         </div>
         <div className='apartment_title_wrapper'>

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.48a32109.css",
+    "main.js": "/kasa/static/js/main.0a62336e.js",
+    "static/media/IMG2.png": "/kasa/static/media/IMG2.dc7a08e1faa2e14de0bd.png",
+    "static/media/IMG.png": "/kasa/static/media/IMG.1168be13650bb18b456e.png",
+    "static/media/Montserrat-Medium.ttf": "/kasa/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
+    "static/media/Montserrat-Regular.ttf": "/kasa/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/logo2.png": "/kasa/static/media/logo2.a0dc371c8ee4775af879.png",
+    "static/media/logo.png": "/kasa/static/media/logo.84ff753656eb79c6d44f.png",
+    "index.html": "/kasa/index.html",
+    "main.48a32109.css.map": "/kasa/static/css/main.48a32109.css.map",
+    "main.0a62336e.js.map": "/kasa/static/js/main.0a62336e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48a32109.css",
+    "static/js/main.0a62336e.js"
+  ]
+}

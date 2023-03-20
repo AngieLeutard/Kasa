@@ -30,6 +30,16 @@
     right: 24px;
 }
 
+.pagination {
+	position: absolute;
+	bottom: 25px;
+	z-index: 1;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+}
+
 /* ** Mobile ** */
 
 @media (max-width:767px) {

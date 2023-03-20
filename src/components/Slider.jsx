@@ -24,11 +24,21 @@ function Slider(image) {
         setIndex(newIndex)
     }
 
+    if (index +1 === image.image.length)
+        return (
+            <div className='slider_wrapper'>
+                <img src={ image.image[index] } alt="" className='slider_picture' />
+            </div>
+        )
+
     return (
         <div className='slider_wrapper'>
             <img src={ image.image[index] } alt="" className='slider_picture' />
             <img src={ arrowLeft } alt="" className='slider_arrow slider_arrowLeft' onClick={ () => { handlerChangeSlide('left')}} />
             <img src={ arrowRight } alt="" className='slider_arrow slider_arrowRight' onClick={ () => { handlerChangeSlide('right')}} />
+            <div className='pagination'>
+                <p>{index + 1}/{image.image.length}</p>
+            </div>
         </div>
     )
 }

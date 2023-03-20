@@ -8,10 +8,14 @@ import Profile from '../components/Profile';
 import Star from '../components/Star';
 import Annonces from '../../src/annonces.json';
 import { useParams } from 'react-router-dom';
+import ErrorPage from '../pages/ErrorPage';
 
 function Apartment() {
   const { id } = useParams();
   const annonce = Annonces.find(a => a.id === id)
+
+    if(annonce === undefined)
+      return(<ErrorPage />)
 
   return (
     <div className='body'>

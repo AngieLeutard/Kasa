@@ -24,7 +24,7 @@ function Slider(image) {
         setIndex(newIndex)
     }
 
-    if (index +1 === image.image.length)
+    if ( image.image.length === 1)
         return (
             <div className='slider_wrapper'>
                 <img src={ image.image[index] } alt="" className='slider_picture' />
